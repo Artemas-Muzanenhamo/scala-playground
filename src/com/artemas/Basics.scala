@@ -1,3 +1,5 @@
+package com.artemas
+
 object Basics extends App {
   // defining a value
   val meaningOfLife: Int = 42
