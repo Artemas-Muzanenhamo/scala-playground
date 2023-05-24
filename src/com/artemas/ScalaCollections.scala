@@ -70,6 +70,25 @@ class ScalaCollections {
    *  case _ => default
    * }
    */
+
+  // Extractor Patterns
+  val names = List("Kobe", "LeBron", "Michael", "Magic")
+  names match {
+    case List("Michael", _, _) => println("found Michael")
+    case List(_, "Kobe", _*) => println("found Kobe")
+    case _ => println("Something")
+  }
+
+
+  // Constructor Patterns
+  case class Person(name: String, age: Int)
+
+  val person = Person("Dale", 21)
+  person match
+    case Person("Date", _) => println("found Person: Dale")
+    case Person(_, 21) => println("found Age: 21")
+    case Person("Bob", 21) => println("found Bob, 21")
+
   // Head and Tail
 
   // Sets
