@@ -60,6 +60,18 @@ class ScalaCollections {
     print(element)
   }
 
+  // Two options to take collections apart we have 2 options:
+  // Pattern matching
+  // Match expressions = similar to 'switch' expressions in other languages
+  /**
+   * value match {
+   *  case pattern guard => expression
+   *  case ...
+   *  case _ => default
+   * }
+   */
+  // Head and Tail
+
   // Sets
   private val setExample: Set[Int] = Set(1, 2, 3, 3, 4, 5, 5, 6, 7, 8)
 
