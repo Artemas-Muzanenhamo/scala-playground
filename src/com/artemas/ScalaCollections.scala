@@ -43,6 +43,23 @@ class ScalaCollections {
    *
    */
 
+  // Travesal
+  val numbers = List(1, 2, 3, 4, 5, 6)
+  // foreach
+  numbers.foreach(print(_))
+
+  // iterator
+  val iter = numbers.iterator
+  while (iter.hasNext) print(iter.next())
+
+  // for loop - Scala uses Generator Based For Loops
+  // any iterator can be used as a generator
+  // under the hood Scala will use the foreach()
+  // All collections have a foreach()
+  for (element <- numbers) {
+    print(element)
+  }
+
   // Sets
   // Maps
 }
