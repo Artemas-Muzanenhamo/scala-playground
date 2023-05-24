@@ -43,7 +43,7 @@ class ScalaCollections {
    *
    */
 
-  // Travesal
+  // Traversal
   val numbers = List(1, 2, 3, 4, 5, 6)
   // foreach
   numbers.foreach(print(_))
@@ -61,5 +61,9 @@ class ScalaCollections {
   }
 
   // Sets
+  private val setExample: Set[Int] = Set(1, 2, 3, 3, 4, 5, 5, 6, 7, 8)
+
   // Maps
+  private val namesAndAge: Map[String, Int] = Map("Kobe" -> 40, "LeBron" -> 38)
+  private val kobeAge: Int = namesAndAge.getOrElse("Kobe", 0)
 }
